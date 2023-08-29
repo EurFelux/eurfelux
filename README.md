@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+It's cool! 但我不想在这里写点什么东西。
+
 <!--
 **EurFelux/eurfelux** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
