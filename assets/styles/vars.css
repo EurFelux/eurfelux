@@ -41,6 +41,7 @@
     --clr-surface-tonal-a50: #b7afaf;
 
     --clr-code: var(--clr-primary-a0);
+    --clr-border: var(--clr-surface-a0);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -5,8 +5,8 @@
 
 .markdown-contents {
     /* font-family: 'Poppins', 'Microsoft YaHei', sans-serif; */
-    padding: 2rem;
-    background-color: var(--clr-surface-a10);
+    padding: 2rem 4rem;
+    background: linear-gradient(to bottom, var(--clr-surface-a0), var(--clr-surface-a10));
 }
 
 .markdown-contents h1,
@@ -208,6 +208,18 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    body {
+        background: url("/assets/images/aurora-borealis-9267515_1920.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .markdown-contents {
+        background: linear-gradient(to bottom, rgba(from var(--clr-surface-a0) r g b / 0.5), rgba(from var(--clr-surface-a10) r g b / 0.5));
+        backdrop-filter: blur(12px);
+    }
+
     .markdown-contents h1:hover,
     .markdown-contents h2:hover,
     .markdown-contents h3:hover,
@@ -219,5 +231,14 @@
 
     .markdown-contents a[href^="http"]::after {
         background-image: url('/eurfelux/assets/icons/link_dark.svg');
+    }
+
+    .markdown-contents blockquote {
+        background-color: rgba(from var(--clr-surface-a0) r g b/ 0.5);   
+    }
+
+    .markdown-contents code {
+        background-color: rgba(from var(--clr-surface-a30) r g b/ 0.5);
+        backdrop-filter: blur(12px);
     }
 }
