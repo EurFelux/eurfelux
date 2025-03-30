@@ -80,12 +80,8 @@ header :nth-child(2 of .name) {
     font-weight: 400;
 }
 
-footer {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+a {
+    color: var(--clr-primary-a0);
 }
 
 @media (min-width: 600px) {
