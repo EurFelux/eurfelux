@@ -125,7 +125,7 @@
     display: inline-block;
     position: relative;
     top: 0.2rem;
-    background-image: url('../icon/link_light.svg');
+    background-image: url('/eurfelux/assets/icons/link_light.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -218,6 +218,6 @@
     }
 
     .markdown-contents a[href^="http"]::after {
-        background-image: url('../icon/link_dark.svg');
+        background-image: url('/eurfelux/assets/icons/link_dark.svg');
     }
 }
