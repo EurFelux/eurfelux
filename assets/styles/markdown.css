@@ -207,6 +207,10 @@
     color: var(--clr-primary-a0);
 }
 
+.markdown-contents em {
+    color: var(--clr-primary-a10);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: url("/eurfelux/assets/images/aurora-borealis-9267515_1920.jpg");
