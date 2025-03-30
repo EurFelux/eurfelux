@@ -20,7 +20,7 @@
     </main>
     <script>
         const markdownContents = document.querySelector('.markdown-contents');
-        fetch('./annotation_guide.md')
+        fetch('./annotation-guide.md')
             .then(response => response.text())
             .then(markdown => {
                 markdownContents.innerHTML = marked.parse(markdown);
