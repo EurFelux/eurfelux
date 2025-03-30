@@ -4,19 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/eurfelux/assets/styles/markdown.css">
-    <!-- <link rel="stylesheet" href="/assets/styles/markdown.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/eurfelux/assets/styles/markdown.css"> -->
+    <link rel="stylesheet" href="/assets/styles/markdown.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+        integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
     <title>元音标注指南</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+        integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked-katex-extension@5.1.4/lib/index.umd.js"></script>
     <script src="/eurfelux/assets/scripts/markdown.js"></script>
 
 </head>
 
 <body>
-    <main class="markdown-contents">
+    <main>
+        <div class="markdown-contents">
+
+        </div>
+        <aside>
+            <nav class="aside-nav">
+
+            </nav>
+        </aside>
     </main>
     <script>
         const markdownContents = document.querySelector('.markdown-contents');
@@ -24,11 +35,35 @@
             .then(response => response.text())
             .then(markdown => {
                 markdownContents.innerHTML = marked.parse(markdown);
+                generateToc();
             })
             .catch(error => {
                 console.error('Error fetching markdown file:', error);
                 markdownContents.innerHTML = 'Error loading markdown file';
             });
+
+
+        function generateToc() {
+            const headings = markdownContents.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            const nav = document.querySelector('.aside-nav');
+
+
+            // 生成目录HTML
+            const tocHtml = Array.from(headings).map(heading => {
+                const level = parseInt(heading.tagName.charAt(1));
+                const text = heading.textContent;
+                const id = text.toLowerCase().replace(/\s+/g, '-');
+
+                // 为标题添加id以供链接
+                heading.id = id;
+
+                // 根据标题级别添加缩进
+                const indent = '  '.repeat(level - 1);
+                return `${indent}<a href="#${id}" class="toc-item level-${level}">${text}</a>`;
+            }).join('\n');
+
+            nav.innerHTML = tocHtml;
+        }
 
     </script>
 </body>
