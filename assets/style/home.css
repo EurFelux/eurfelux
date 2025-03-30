@@ -1,0 +1,113 @@
+@import "./base.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(120deg, var(--clr-primary-b0), var(--clr-primary-a0));
+    
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    margin: 5rem 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right bottom, var(--clr-surface-a10), var(--clr-surface-a0));
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 40em;
+    box-shadow: 0 0 16px 8px rgba(from var(--clr-dark-a0) r g b / 0.5);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: hidden;
+    box-shadow: 0 0 10px 4px var(--clr-primary-a0);
+    background-color: var(--clr-surface-a0);
+    
+}
+
+.img-wrapper img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+header :nth-child(1 of .name) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -1em;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+header :nth-child(2 of .name) {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+     /* main {
+        flex-direction: row;
+     } */
+
+     header :nth-child(1 of .name) {
+        margin-top: -4rem;
+     }
+
+     .img-wrapper img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    .card {
+        background: linear-gradient(to right bottom, var(--clr-surface-a0), var(--clr-surface-a10));
+    }
+}

@@ -1,0 +1,223 @@
+@import 'base.css';
+@import url('https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css');
+
+
+
+.markdown-contents {
+    /* font-family: 'Poppins', 'Microsoft YaHei', sans-serif; */
+    padding: 2rem;
+    background-color: var(--clr-surface-a10);
+}
+
+.markdown-contents h1,
+.markdown-contents h2,
+.markdown-contents h3,
+.markdown-contents h4,
+.markdown-contents h5,
+.markdown-contents h6 {
+    position: relative;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--clr-primary-a0);
+}
+
+.markdown-contents h1 a,
+.markdown-contents h2 a,
+.markdown-contents h3 a,
+.markdown-contents h4 a,
+.markdown-contents h5 a,
+.markdown-contents h6 a {
+    color: var(--clr-dark-a0);
+    transition: all ease-in-out 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .markdown-contents h1 a,
+    .markdown-contents h2 a,
+    .markdown-contents h3 a,
+    .markdown-contents h4 a,
+    .markdown-contents h5 a,
+    .markdown-contents h6 a {
+        color: var(--clr-light-a0);
+    }
+}
+
+.markdown-contents h1:hover,
+.markdown-contents h2:hover,
+.markdown-contents h3:hover,
+.markdown-contents h4:hover,
+.markdown-contents h5:hover,
+.markdown-contents h6:hover {
+    text-shadow: 0 0 0.2rem var(--clr-dark-a0);
+}
+
+.markdown-contents h1:hover:before,
+.markdown-contents h2:hover:before,
+.markdown-contents h3:hover:before,
+.markdown-contents h4:hover:before,
+.markdown-contents h5:hover:before,
+.markdown-contents h6:hover:before {
+    content: '#';
+    position: absolute;
+    left: -1em;
+    top: .1em;
+    color: var(--clr-primary-a0);
+    text-shadow: none;
+    font-weight: 600;
+    font-size: .9em;
+    margin-right: 0.5rem;
+}
+
+.markdown-contents h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.markdown-contents h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-contents h3 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-contents h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-contents h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-contents h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-contents p {
+    /* font-family: "Poppins", "Microsoft YaHei", "等线", "黑体", sans-serif; */
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.markdown-contents a {
+    color: var(--clr-primary-a20);
+    text-decoration: none;
+}
+
+.markdown-contents a[href^="http"]:hover {
+    text-decoration: underline;
+}
+
+.markdown-contents a[href^="http"]::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    background-image: url('../icon/link_light.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.3rem;
+}
+
+.markdown-contents ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    line-height: 1.5;
+}
+
+.markdown-contents ol {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+    line-height: 1.5;
+}
+
+.markdown-contents blockquote {
+    background-color: var(--clr-surface-a20);
+    border-left: 4px solid var(--clr-primary-a0);
+    padding: .2rem 0 .2rem 1rem;
+    margin: 0 0 1rem 1rem;
+}
+
+.markdown-contents blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.markdown-contents code {
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    background-color: rgba(from var(--clr-surface-a0) r g b / 0.8);
+    color: var(--clr-code);
+    padding: 0.1rem 0.3rem;
+    margin: 0 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.markdown-contents pre {
+    background-color: var(--clr-surface-a0);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.markdown-contents img {
+    max-width: 1000px;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.markdown-contents img:hover {
+    box-shadow: 0 0 1rem 0.2rem var(--clr-dark-a0);
+}
+
+.markdown-contents table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.markdown-contents table th,
+.markdown-contents table td {
+    padding: 0.5rem;
+    border: 1px solid var(--clr-surface-a0);
+}
+
+.markdown-contents table th {
+    background-color: var(--clr-surface-a0);
+}
+
+.markdown-contents table td {
+    background-color: var(--clr-surface-a10);
+}
+
+.markdown-contents strong {
+    color: var(--clr-primary-a0);
+}
+
+@media (prefers-color-scheme: dark) {
+    .markdown-contents h1:hover,
+    .markdown-contents h2:hover,
+    .markdown-contents h3:hover,
+    .markdown-contents h4:hover,
+    .markdown-contents h5:hover,
+    .markdown-contents h6:hover {
+        text-shadow: 0 0 0.2rem var(--clr-light-a0);
+    }
+
+    .markdown-contents a[href^="http"]::after {
+        background-image: url('../icon/link_dark.svg');
+    }
+}

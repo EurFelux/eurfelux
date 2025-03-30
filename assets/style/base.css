@@ -1,0 +1,27 @@
+@import "./vars.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: var(--clr-surface-a0);
+    color: var(--clr-dark-a0);
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--clr-surface-a0);
+        color: var(--clr-light-a0);
+    }
+}
+

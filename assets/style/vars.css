@@ -1,0 +1,68 @@
+:root {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    /* --clr-primary-a0: #8444e3;
+    --clr-primary-a10: #9459e7;
+    --clr-primary-a20: #a46eeb;
+    --clr-primary-a30: #b283ee;
+    --clr-primary-a40: #c097f1;
+    --clr-primary-a50: #ceabf5; */
+    --clr-primary-a0: hsl(207, 82%, 66%);
+    --clr-primary-a10: hsl(207, 82%, 71%);
+    --clr-primary-a20: hsl(207, 82%, 76%);
+    --clr-primary-a30: hsl(207, 82%, 81%);
+    --clr-primary-a40: hsl(207, 82%, 86%);
+    --clr-primary-a50: hsl(207, 82%, 91%);
+    --clr-primary-b0: #0C13F3;
+    --clr-primary-b10: #2429F4;
+    --clr-primary-b20: #3C40F6;
+    --clr-primary-b30: #5457F7;
+    --clr-primary-b40: #6C6EF9;
+    --clr-primary-b50: #8485FA;
+
+
+    /** Theme surface colors */
+    --clr-surface-a0: #ffffff;
+    --clr-surface-a10: #f0f0f0;
+    --clr-surface-a20: #e1e1e1;
+    --clr-surface-a30: #d3d3d3;
+    --clr-surface-a40: #c5c5c5;
+    --clr-surface-a50: #b6b6b6;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #ffeced;
+    --clr-surface-tonal-a10: #f0dfe0;
+    --clr-surface-tonal-a20: #e1d3d4;
+    --clr-surface-tonal-a30: #d3c7c7;
+    --clr-surface-tonal-a40: #c5bbbb;
+    --clr-surface-tonal-a50: #b7afaf;
+
+    --clr-code: var(--clr-primary-a0);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+        /** Theme surface colors */
+        --clr-surface-a0: #121222;
+        --clr-surface-a10: #272b34;
+        --clr-surface-a20: #3f3f4f;
+        --clr-surface-a30: #575767;
+        --clr-surface-a40: #717181;
+        --clr-surface-a50: #8b8b9b;
+
+        /** Theme tonal surface colors */
+        --clr-surface-tonal-a0: #1e1824;
+        --clr-surface-tonal-a10: #332d39;
+        --clr-surface-tonal-a20: #49444e;
+        --clr-surface-tonal-a30: #615c65;
+        --clr-surface-tonal-a40: #79757d;
+        --clr-surface-tonal-a50: #928f96;
+
+        --clr-code: #61afef;
+    }
+
+}
