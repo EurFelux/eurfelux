@@ -14,10 +14,16 @@ main aside {
     display: none;
 }
 
+.toc-item {
+    color: var(--clr-text);
+    transition: all ease-in-out 0.2s;
+}
+
 .toc-item.level-1 {
     color: var(--clr-primary-a0);
     padding-left: 0.5rem;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .toc-item.level-2 {
@@ -177,6 +183,11 @@ main aside {
     list-style-type: disc;
     margin-left: 1.5rem;
     line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.markdown-contents li > ul {
+    margin-bottom: 0;
 }
 
 .markdown-contents ol {
@@ -188,8 +199,9 @@ main aside {
 .markdown-contents blockquote {
     background-color: var(--clr-surface-a20);
     border-left: 4px solid var(--clr-primary-a0);
-    padding: .2rem 0 .2rem 1rem;
+    padding: 1rem;
     margin: 0 0 1rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .markdown-contents blockquote p:last-child {
@@ -251,8 +263,9 @@ main aside {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    main {
         background: url("/eurfelux/assets/images/aurora-borealis-9267515_1920.jpg");
+        background: url("/assets/images/aurora-borealis-9267515_1920.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -291,15 +304,19 @@ main aside {
         width: 25rem;
         display: flex;
         flex-direction: column;
+        background: rgba(from var(--clr-surface-a0) r g b / 0.5);
+        backdrop-filter: blur(12px);
     }
     
     main aside nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        
+        flex: 1;
         position: sticky;
         top: 0;
+        max-height: 80vh;
+        
     }
     
     main aside nav a {
@@ -307,8 +324,6 @@ main aside {
         display: block;
         padding: 0.5rem 1rem;
         border-bottom: 1px solid var(--clr-border);
-        background-color: var(--clr-surface-a0);
-        color: var(--clr-dark-a0);
         text-decoration: none;
     }
     
