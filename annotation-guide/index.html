@@ -54,10 +54,7 @@
           .map((heading) => {
             const level = parseInt(heading.tagName.charAt(1));
             const text = heading.textContent;
-            const id = text.toLowerCase().replace(/\s+/g, "-");
-
-            // 为标题添加id以供链接
-            heading.id = id;
+            const id = heading.id;
 
             return `<a href="#${id}" class="toc-item level-${level}">${text}</a>`;
           })
