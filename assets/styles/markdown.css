@@ -264,8 +264,7 @@ main aside {
 
 @media (prefers-color-scheme: dark) {
     main {
-        background: url("/eurfelux/assets/images/aurora-borealis-9267515_1920.jpg");
-        background: url("/assets/images/aurora-borealis-9267515_1920.jpg");
+        background: url("/eurfelux/assets/images/aurora-borealis-9267515_1920.jpg"), url("/assets/images/aurora-borealis-9267515_1920.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
