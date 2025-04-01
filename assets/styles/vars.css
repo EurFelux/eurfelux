@@ -47,7 +47,6 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-
         /** Theme surface colors */
         --clr-surface-a0: #121222;
         --clr-surface-a10: #272b34;

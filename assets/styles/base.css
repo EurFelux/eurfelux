@@ -2,6 +2,19 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        font-size: 16px;
+    }
 }
 
 body, body * {
@@ -15,7 +28,6 @@ body {
     background-color: var(--clr-surface-a0);
     color: var(--clr-dark-a0);
     font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {

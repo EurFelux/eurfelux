@@ -114,37 +114,37 @@ main aside {
 }
 
 .markdown-contents h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .markdown-contents h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .markdown-contents h3 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
 .markdown-contents h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
 .markdown-contents h5 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
 .markdown-contents h6 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
@@ -299,6 +299,7 @@ main aside {
 }
 
 @media screen and (min-width: 1024px) {
+
     main aside {
         width: 25rem;
         display: flex;
@@ -328,5 +329,41 @@ main aside {
     
     main aside nav a:hover {
         background-color: var(--clr-surface-a10);
+    }
+
+    .markdown-contents h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .markdown-contents h2 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    
+    .markdown-contents h3 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    
+    .markdown-contents h4 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    
+    .markdown-contents h5 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    
+    .markdown-contents h6 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
     }
 }
