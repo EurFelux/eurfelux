@@ -161,6 +161,10 @@ main aside {
     text-decoration: none;
 }
 
+.markdown-contents a:hover {
+    text-decoration: underline;
+}
+
 .markdown-contents a[href^="http"]:hover {
     text-decoration: underline;
 }
