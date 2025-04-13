@@ -1,4 +1,4 @@
-# Praat 元音标注操作规范 v1.0
+# Praat 元音标注操作规范 v1.1
 
 ## 工作概述
 
@@ -53,6 +53,52 @@
 > ![formant](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-12_21-39-05.png)
 > 
 > **理想情况下**，会有四条散点连成的线，自下而上分别称为 F1、F2、F3、F4。
+
+### 软件设置
+
+#### 输出格式设置
+
+为了方便后期处理，在保存文件前，你需要先设置 Praat 的文本输出格式为 UTF-8。
+
+找到 `Praat Objects -> Praat -> Settings -> Text writing settings`，选择编码格式为 `UTF-8`，然后点击 `OK` 即可。
+
+![set encode 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-12-53.png)
+
+![set encode 2](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-13-16.png)
+
+#### 音高与强度
+
+开启音高和强度显示，辅助元音稳定段判断。
+
+在上方菜单找到 `Pitch -> Show pitch` 打开音高显示。
+
+![show pitch](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-48-23.png)
+
+在上方菜单找到 `Intensity -> Show intensity` 打开强度显示。
+
+![show pitch](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-48-44.png)
+
+#### 共振峰设置
+
+在上方菜单找到 `Formants -> Show formants` 打开共振峰显示。
+
+![formant settings 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-46-56.png)
+
+再在上方菜单中找到`Formants -> Formant settings...`。
+
+![formant settings 2](/eurfelux/assets/images/annotation-guide/image-20250224060352180.png)
+
+推荐设置为：
+
+- Formant ceiling
+  - 男性：最高 4000Hz
+  - 女性：最高 4600Hz
+- Number of formants：`4.0`
+- Window length：`0.04`
+
+Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲线清晰分明即可。曲线质量参考下图：
+
+![formant curve quality](/eurfelux/assets/images/annotation-guide/image-20250224061001543.png)
 
 ### 标注界面操作方法
 
@@ -115,31 +161,7 @@
 
 ![add bounder 3](/eurfelux/assets/images/annotation-guide/image-20250224060059893.png)
 
-### 参数设置
-
-在上方菜单中找到`Formants -> Formant settings...`。
-
-![formant settings](/eurfelux/assets/images/annotation-guide/image-20250224060352180.png)
-
-推荐设置为：
-
-- Formant ceiling
-  - 男性：最高 4000Hz
-  - 女性：最高 4600Hz
-- Number of formants：`4.0`
-- Window length：`0.04`
-
-Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲线清晰分明即可。曲线质量参考下图：
-
-![formant curve quality](/eurfelux/assets/images/annotation-guide/image-20250224061001543.png)
-
 ### 保存文件的方法
-
-在第一次保存文件前，你需要先设置 Praat 的输出格式为 UTF-8。
-
-![set encode 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-12-53.png)
-
-![set encode 2](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-13-16.png)
 
 完成标注校对后，选择菜单中的 `File -> Save whole TextGrid as text file...` 保存标注文件。文件名不要改动，覆盖原文件即可。
 
@@ -162,18 +184,27 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 打开 Praat 后，重复以下流程：
 
 1. 选择一个未校对的参与者，导入其 `wav` 音频与 `TextGrid` 文件到 Praat 中
-2. 对每段指定元音（i, y, a, u, o）的区间进行校对，选择元音稳定段
-3. 保存校对完成的 `TextGrid` 文件
-4. 移除校对完成的文件
-5. 在 `check.md` 中对完成的参与者进行勾选
+2. 为该参与者调整共振峰设置
+3. 对每段指定元音（i, y, a, u, o）的区间进行校对，选择元音稳定段
+4. 保存校对完成的 `TextGrid` 文件
+5. 移除校对完成的文件
+6. 在 `check.md` 中对完成的参与者进行勾选
+
+## 标注要求
+
+1. 仅校对 i, y, a, u, o 这五个元音
+2. 对比下方标准文本，检查每一个字是否自动标注。如果没有自动标注则需要手动添加。
+3. 时长标准：最小标注区间时长 10ms，最大标注区间时长 70ms
 
 ## 标注文本
 
 > 有一次，北风和太阳正在争论谁比较有本事，他们正好看到有个穿着大衣的人走过，他们就说，谁可以让那个人脱掉那件大衣，就算谁比较有本事。于是*北方*开始拼命的吹，怎知他吹得越厉害，那个人就越是用大衣包紧自己，最后北风没办法就放弃了，接着太阳出来晒了一会儿，那个人感觉变得很热，立刻把大衣脱掉了，于是北风只好认输了。
 >
-> （PS 这里的*北方*是收集数据时提供的文本中出现的错误。可能会有一些被试修正为*北风*。）
+> （PS 这里的*北方*是收集数据时提供的文本中出现的错误。可能会有一些参与者读的时候修正为*北风*。）
 
 目的是校对 i, y, a, u, o（衣、于、啊、乌、哦）五种元音的标注区间，将其调整到准确的位置。下面会用粗体把含元音的字标记出来，并附部分该元音的频谱图以供参考。
+
+> 有**一**次，北*风*和太**阳***正*在*争*论谁**比**较有本事，**他**们*正*好看到有*个***穿***着*大**衣**的人走**过**，**他**们就**说**，谁可**以让***那*个人**脱**掉*那*件**大衣**，就算谁**比**较有本事。**于**是北*方*开始**拼命**的吹，怎知**他**吹得越**厉**害，*那个*人就越是**用大衣**包**紧**自**己**，最后北*风*没**办法**就**放弃**了，接着太**阳出**来晒了**一**会儿，*那*个人**感**觉变得很热，**立***刻***把大衣脱**掉了，**于**是北*风*只好认**输**了。
 
 ### 含 i 的部分
 
@@ -209,7 +240,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 ### 含 o 的部分
 
-> 有一次，北**风**和太阳*正*在*争*论谁比较有本事，他们*正*好看到有*个*穿*着*大衣的人走**过**，他们就**说**，谁*可*以让那*个*人**脱**掉那件大衣，就算谁比较有本事。于是北*方*开始拼命的吹，怎知他吹得越厉害，那*个*人就越是用大衣包紧自己，最后北**风**没办法就放弃了，接着太阳出来晒了一会儿，那个人感觉变得很热，立*刻*把大衣**脱**掉了，于是北**风**只好认输了。
+> 有一次，北*风*和太阳*正*在*争*论谁比较有本事，他们*正*好看到有*个*穿*着*大衣的人走**过**，他们就**说**，谁*可*以让那*个*人**脱**掉那件大衣，就算谁比较有本事。于是北*方*开始拼命的吹，怎知他吹得越厉害，那*个*人就越是用大衣包紧自己，最后北*风*没办法就放弃了，接着太阳出来晒了一会儿，那个人感觉变得很热，立*刻*把大衣**脱**掉了，于是北*风*只好认输了。
 
 参考谱图：
 
@@ -221,8 +252,9 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 - “那个”在口语中常常发音成“内个”，需判断“那”是否为 na。
 - 有的人会把 e 发成 o，比如“可以”说成“阔以”，“着”说成 zhuo。需要判断是否为 o。
+- 风可能读成 feng 或者 fong。如果你分不清楚，可以当成都是 fong。
 
 ## 质量控制
 
-1. 时长标准：最小标注区间时长 10ms
+1. 时长标准：最小标注区间时长 10ms，最大标注区间时长 70ms
 2. 交叉检验：选择小部分样本多人标注，要求边界误差 $\leq$ 10ms
