@@ -135,6 +135,12 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 ### 保存文件的方法
 
+在第一次保存文件前，你需要先设置 Praat 的输出格式为 UTF-8。
+
+![set encode 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-12-53.png)
+
+![set encode 2](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-13-16.png)
+
 完成标注校对后，选择菜单中的 `File -> Save whole TextGrid as text file...` 保存标注文件。文件名不要改动，覆盖原文件即可。
 
 ![save file](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-12_21-15-52.png)
