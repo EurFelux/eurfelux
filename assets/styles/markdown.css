@@ -269,7 +269,7 @@ main aside {
 }
 
 .markdown-contents em {
-    color: var(--clr-primary-b0);
+    color: var(--clr-primary-b50);
 }
 
 @media (prefers-color-scheme: dark) {
