@@ -56,6 +56,7 @@ main aside {
     border-right: 1px solid var(--clr-border);
     overflow: auto;
     scrollbar-color: var(--clr-primary-a0) transparent;
+    scroll-behavior: smooth;
     transition: all 1s;
 }
 
