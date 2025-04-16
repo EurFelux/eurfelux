@@ -9,8 +9,8 @@ main {
     background: linear-gradient(to bottom, var(--clr-surface-a0), var(--clr-surface-a10));
     background-attachment: fixed;
     height: 100vh;
+    overflow-y: auto;
 
-    overflow: auto;
     scrollbar-color: var(--clr-primary-a0) transparent;
     scroll-behavior: smooth;
 }
@@ -32,7 +32,7 @@ main aside {
 }
 
 .toc-item.level-2 {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .toc-item.level-3 {
@@ -40,22 +40,21 @@ main aside {
 }
 
 .toc-item.level-4 {
-    padding-left: 2rem;
-}
-
-.toc-item.level-5 {
     padding-left: 2.5rem;
 }
 
+.toc-item.level-5 {
+    padding-left: 3.5rem;
+}
+
 .toc-item.level-6 {
-    padding-left: 3rem;
+    padding-left: 4.5rem;
 }
 
 
 .markdown-contents {
     /* font-family: 'Poppins', 'Microsoft YaHei', sans-serif; */
     padding: 2rem 4rem;
-    border-right: 1px solid var(--clr-border);
     transition: all 1s;
 }
 
@@ -321,12 +320,16 @@ main aside {
         flex-direction: column;
         background: rgba(from var(--clr-surface-a0) r g b / 0.5);
         backdrop-filter: blur(12px);
+        border-left: 1px solid var(--clr-border);
+        border-right: 1px solid var(--clr-border);
+
     }
     
     main aside nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        justify-content: start;
         flex: 1;
         top: 0;
         position: relative;
@@ -343,12 +346,16 @@ main aside {
     
     main aside nav a {
         flex: 1;
+        max-height: 3em;
         display: block;
         padding: 0.5rem 1rem;
         border-bottom: 1px solid var(--clr-border);
         text-decoration: none;
     }
     
+    main aside nav a.active {
+        color: var(--clr-primary-a10);
+    }
     main aside nav a:hover {
         background-color: var(--clr-surface-a10);
     }

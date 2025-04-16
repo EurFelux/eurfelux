@@ -31,12 +31,11 @@
     </main>
     <script>
       const markdownContents = document.querySelector(".markdown-contents");
-      fetch("./annotation-guide.md")
+      fetch("./problems.md")
         .then((response) => response.text())
         .then((markdown) => {
           markdownContents.innerHTML = marked.parse(markdown);
           generateToc(markdownContents);
-          initHeadingObserver();
         })
         .catch((error) => {
           console.error("Error fetching markdown file:", error);
