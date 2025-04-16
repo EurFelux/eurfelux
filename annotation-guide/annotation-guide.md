@@ -14,9 +14,9 @@
 
 [下载地址](https://www.fon.hum.uva.nl/praat/)
 
-![download praat 1](/eurfelux/assets/images/annotation-guide/image-20250224001832190.png)
+![download praat 1](../assets/images/annotation-guide/image-20250224001832190.png)
 
-![download praat 2](/eurfelux/assets/images/annotation-guide/image-20250224001915551.png)
+![download praat 2](../assets/images/annotation-guide/image-20250224001915551.png)
 
 ### 待标注数据集结构
 
@@ -30,13 +30,13 @@
 
 安装并打开 Praat 后，会出现两个窗口 `Praat Objects` 和 `Praat Picture`。
 
-![praat ui 1](/eurfelux/assets/images/annotation-guide/image-20250224005151814.png)
+![praat ui 1](../assets/images/annotation-guide/image-20250224005151814.png)
 
 先不用管 `Praat Picture`，来看 `Praat Objects`。
 
 上方有 4 个下拉菜单，分别是 `Praat`, `New`, `Open`和`Save`。我们现在暂时只需要关心 `Open`。
 
-![praat ui 2](/eurfelux/assets/images/annotation-guide/image-20250224005421041.png)
+![praat ui 2](../assets/images/annotation-guide/image-20250224005421041.png)
 
 在这里，可以通过 `Read from file...` 来导入 `wav` 文件或 `TextGrid` 文件。
 
@@ -50,7 +50,7 @@
 > A: 共振峰（Formant）是人类声音中的一种声学特征。当声波通过声道（口腔、鼻腔等）时，某些特定频率被放大，形成频谱中的能量峰值，这些峰值频率称为共振峰。
 > 在 Praat 中，共振峰以语谱图上的红点表示。
 > 
-> ![formant](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-12_21-39-05.png)
+> ![formant](../assets/images/annotation-guide/Snipaste_2025-04-12_21-39-05.png)
 > 
 > **理想情况下**，会有四条散点连成的线，自下而上分别称为 F1、F2、F3、F4。
 
@@ -62,9 +62,9 @@
 
 找到 `Praat Objects -> Praat -> Settings -> Text writing settings`，选择编码格式为 `UTF-8`，然后点击 `OK` 即可。
 
-![set encode 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-12-53.png)
+![set encode 1](../assets/images/annotation-guide/Snipaste_2025-04-13_22-12-53.png)
 
-![set encode 2](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-13_22-13-16.png)
+![set encode 2](../assets/images/annotation-guide/Snipaste_2025-04-13_22-13-16.png)
 
 #### 音高与强度
 
@@ -72,21 +72,21 @@
 
 在上方菜单找到 `Pitch -> Show pitch` 打开音高显示。
 
-![show pitch](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-48-23.png)
+![show pitch](../assets/images/annotation-guide/Snipaste_2025-04-14_02-48-23.png)
 
 在上方菜单找到 `Intensity -> Show intensity` 打开强度显示。
 
-![show pitch](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-48-44.png)
+![show pitch](../assets/images/annotation-guide/Snipaste_2025-04-14_02-48-44.png)
 
 #### 共振峰设置
 
 在上方菜单找到 `Formants -> Show formants` 打开共振峰显示。
 
-![formant settings 1](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-14_02-46-56.png)
+![formant settings 1](../assets/images/annotation-guide/Snipaste_2025-04-14_02-46-56.png)
 
 再在上方菜单中找到`Formants -> Formant settings...`。
 
-![formant settings 2](/eurfelux/assets/images/annotation-guide/image-20250224060352180.png)
+![formant settings 2](../assets/images/annotation-guide/image-20250224060352180.png)
 
 推荐设置为：
 
@@ -98,11 +98,11 @@
 
 Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲线清晰分明即可。曲线质量参考下图：
 
-![formant curve quality](/eurfelux/assets/images/annotation-guide/image-20250224061001543.png)
+![formant curve quality](../assets/images/annotation-guide/image-20250224061001543.png)
 
 ### 标注界面操作方法
 
-![praat ui 3](/eurfelux/assets/images/annotation-guide/image-20250310035928971.png)
+![praat ui 3](../assets/images/annotation-guide/image-20250310035928971.png)
 
 进入编辑界面可以看到，上方出现了音频的波形图，中间暂时什么也没有，下方是现有的标注。右侧是用于音素标注的若干国际音标，我们不需要管这个。
 
@@ -125,7 +125,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 > 快捷键`Ctrl+Z`可能无法使用。如果出现这种情况，可以通过在上方 Edit 中找到撤销选项来撤销。
 >
-> ![undo](/eurfelux/assets/images/annotation-guide/image-20250224055136298.png)
+> ![undo](../assets/images/annotation-guide/image-20250224055136298.png)
 
 ### 如何判断元音稳定段
 
@@ -137,45 +137,45 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 简单来说，就是元音发音最稳定的部分。可以看下图，这个 `a` 的波形图看起来就很稳定，振幅变动很小。
 
-![stable 1](/eurfelux/assets/images/annotation-guide/image-20250331053252260.png)
+![stable 1](../assets/images/annotation-guide/image-20250331053252260.png)
 
 而像下面图中这种标注就不行。这个 `a` 虽然音高稳定，但波形图后半部分渐弱，而且前半部分 F1 共振峰变化大。
 
-![stable 2](/eurfelux/assets/images/annotation-guide/image-20250331054007758.png)
+![stable 2](../assets/images/annotation-guide/image-20250331054007758.png)
 
 这里就根据共振峰，截掉 F1 的爬升阶段，再根据语谱图和波形图，选取中间的稳定段。
 
-![stable 3](/eurfelux/assets/images/annotation-guide/image-20250331054523809.png)
+![stable 3](../assets/images/annotation-guide/image-20250331054523809.png)
 
 ### 添加区间边界的方法
 
 下面用一个例子来说明怎么添加区间边界。如下图所示，`ow` 和 `i` 相邻，假如我想要缩小 `ow` 的区间段，但是如果直接调整右边界就会导致 `i` 的区间增大，这种时候就应该添加新的边界。
 
-![add bounder 1](/eurfelux/assets/images/annotation-guide/image-20250224055911279.png)
+![add bounder 1](../assets/images/annotation-guide/image-20250224055911279.png)
 
 首先选中想要添加边界的时间点，找到上方菜单 `Interval` 中的 `Add interval on tier 1` 即可添加边界。或者，如果快捷键有效的话，可以尝试使用 `Ctrl+1`。
 
-![add bounder 2](/eurfelux/assets/images/annotation-guide/image-20250224055732689.png)
+![add bounder 2](../assets/images/annotation-guide/image-20250224055732689.png)
 
 另一种方法是点击这个圆形标记，也可以添加边界。
 
-![add bounder 3](/eurfelux/assets/images/annotation-guide/image-20250224060059893.png)
+![add bounder 3](../assets/images/annotation-guide/image-20250224060059893.png)
 
 ### 保存文件的方法
 
 完成标注校对后，选择菜单中的 `File -> Save whole TextGrid as text file...` 保存标注文件。文件名不要改动，覆盖原文件即可。
 
-![save file](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-12_21-15-52.png)
+![save file](../assets/images/annotation-guide/Snipaste_2025-04-12_21-15-52.png)
 
 ### 移除文件的方法
 
 保存校对完成的标注文件后，你需要先移除之前加载的文件，再加载新的文件。如下图所示，选中文件后，点击左下角的 `Remove` 按钮即可。
 
-![remove object](/eurfelux/assets/images/annotation-guide/Snipaste_2025-04-12_22-02-55.png)
+![remove object](../assets/images/annotation-guide/Snipaste_2025-04-12_22-02-55.png)
 
 ### 提交文件的方法
 
-当你完成所有参与者的标注校对工作后，请你将校对后的文件重新压缩为 `zip` 文件，发送到邮箱 [eurfelux@gmail.com](mailto://eurfelux@gmail.com?subject="Group%201%20校对完成")。
+当你完成所有参与者的标注校对工作后，请你将校对后的文件重新压缩为 `zip` 文件，发送到邮箱 ..@gmail.com](mailto:/..@gmail.com?subject="Group%201%20校对完成")。
 
 请保留原本的数据集结构打包发送给我，感谢你的配合。
 
@@ -212,7 +212,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 参考谱图：
 
-![i refer](/eurfelux/assets/images/annotation-guide/image-20250216232255514.png)
+![i refer](../assets/images/annotation-guide/image-20250216232255514.png)
 
 ### 含 y 的部分
 
@@ -220,7 +220,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 参考谱图：
 
-![y refer](/eurfelux/assets/images/annotation-guide/image-20250331054933657.png)
+![y refer](../assets/images/annotation-guide/image-20250331054933657.png)
 
 ### 含 a 的部分
 
@@ -228,7 +228,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 参考谱图：
 
-![a refer](/eurfelux/assets/images/annotation-guide/image-20250331055259331.png)
+![a refer](../assets/images/annotation-guide/image-20250331055259331.png)
 
 ### 含 u 的部分
 
@@ -236,7 +236,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 参考谱图：
 
-![u refer](/eurfelux/assets/images/annotation-guide/image-20250331055753903.png)
+![u refer](../assets/images/annotation-guide/image-20250331055753903.png)
 
 ### 含 o 的部分
 
@@ -244,7 +244,7 @@ Formant ceiling 可进行微调，只要尽可能让频谱图中的共振峰曲�
 
 参考谱图：
 
-![o refer](/eurfelux/assets/images/annotation-guide/image-20250331055919271.png)
+![o refer](../assets/images/annotation-guide/image-20250331055919271.png)
 
 ### 关于口音
 

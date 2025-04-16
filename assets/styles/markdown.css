@@ -353,9 +353,9 @@ main aside {
         background-color: var(--clr-surface-a10);
     }
 
-    .markdown-contents {
+    /* .markdown-contents {
         
-    }
+    } */
 
     .markdown-contents h1 {
         font-size: 3rem;
