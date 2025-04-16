@@ -8,8 +8,11 @@ main {
     align-items: stretch;
     background: linear-gradient(to bottom, var(--clr-surface-a0), var(--clr-surface-a10));
     background-attachment: fixed;
-    max-height: 100vh;
+    height: 100vh;
 
+    overflow: auto;
+    scrollbar-color: var(--clr-primary-a0) transparent;
+    scroll-behavior: smooth;
 }
 
 main aside {
@@ -52,11 +55,7 @@ main aside {
 .markdown-contents {
     /* font-family: 'Poppins', 'Microsoft YaHei', sans-serif; */
     padding: 2rem 4rem;
-    /* padding-right: 0; */
     border-right: 1px solid var(--clr-border);
-    overflow: auto;
-    scrollbar-color: var(--clr-primary-a0) transparent;
-    scroll-behavior: smooth;
     transition: all 1s;
 }
 
@@ -316,7 +315,8 @@ main aside {
 
     main aside {
         width: 25rem;
-        /* position: sticky; */
+        position: sticky;
+        top: 0;
         display: flex;
         flex-direction: column;
         background: rgba(from var(--clr-surface-a0) r g b / 0.5);
