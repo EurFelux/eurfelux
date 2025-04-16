@@ -66,7 +66,7 @@ function initHeadingObserver() {
       });
     },
     {
-      root: document.querySelector('main'),
+      root: document.querySelector('body'),
       threshold: 0.5,
       rootMargin: '0px 0px -80% 0px',
     }

@@ -1,21 +1,20 @@
 @import 'base.css';
 @import url('https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css');
 
-main {
+
+body {
+    scrollbar-color: var(--clr-primary-a0) transparent;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    background: linear-gradient(to bottom, var(--clr-surface-a0), var(--clr-surface-a10));
-    background-attachment: fixed;
-    height: 100vh;
-    overflow-y: auto;
-
-    scrollbar-color: var(--clr-primary-a0) transparent;
-    scroll-behavior: smooth;
+    background-color: transparent;
 }
 
-main aside {
+aside {
     display: none;
 }
 
@@ -56,6 +55,11 @@ main aside {
     /* font-family: 'Poppins', 'Microsoft YaHei', sans-serif; */
     padding: 2rem 4rem;
     transition: all 1s;
+    height: fit-content;
+
+    /* background: linear-gradient(to bottom, var(--clr-surface-a0), var(--clr-surface-a10)); */
+    background-color: transparent;
+    background-attachment: fixed;
 }
 
 .markdown-contents h1,
@@ -80,8 +84,16 @@ main aside {
     text-decoration: none;
 }
 
+.markdown-contents h1 a:hover,
+.markdown-contents h2 a:hover,
+.markdown-contents h3 a:hover,
+.markdown-contents h4 a:hover,
+.markdown-contents h5 a:hover,
+.markdown-contents h6 a:hover {
+    text-decoration: none;
+}
 @media (prefers-color-scheme: dark) {
-
+    
     .markdown-contents h1 a,
     .markdown-contents h2 a,
     .markdown-contents h3 a,
@@ -272,7 +284,7 @@ main aside {
 }
 
 @media (prefers-color-scheme: dark) {
-    main {
+    html {
         background: url("/eurfelux/assets/images/aurora-borealis-9267515_1920.jpg"), url("/assets/images/aurora-borealis-9267515_1920.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -280,6 +292,7 @@ main aside {
     }
 
     .markdown-contents {
+        background-color: transparent;
         background: linear-gradient(to bottom, rgba(from var(--clr-surface-a0) r g b / 0.5), rgba(from var(--clr-surface-a10) r g b / 0.5));
         backdrop-filter: blur(12px);
     }
@@ -308,12 +321,18 @@ main aside {
 }
 
 @media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        overflow-y: auto;
+    }
 
     main {
         position: relative;
+        grid-column: 1 / 2;
     }
 
-    main aside {
+    aside {
         width: 25rem;
         position: sticky;
         top: 0;
@@ -323,10 +342,11 @@ main aside {
         backdrop-filter: blur(12px);
         border-left: 1px solid var(--clr-border);
         border-right: 1px solid var(--clr-border);
+        grid-column: 2 / 3;
 
     }
     
-    main aside nav {
+    aside nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -338,14 +358,14 @@ main aside {
         scrollbar-width: none;
     }
 
-    main aside nav a:first-child {
+    aside nav a:first-child {
         position: sticky;
         top: 0;
         background: linear-gradient(to bottom right, rgba(from var(--clr-surface-a0) r g b / 0.5), rgba( from var(--clr-surface-a20) r g b / 0.5));
         backdrop-filter: blur(6px);
     }
     
-    main aside nav a {
+    aside nav a {
         flex: 1;
         max-height: 3em;
         display: block;
@@ -354,10 +374,10 @@ main aside {
         text-decoration: none;
     }
     
-    main aside nav a.active {
+    aside nav a.active {
         color: var(--clr-primary-a10);
     }
-    main aside nav a:hover {
+    aside nav a:hover {
         background-color: var(--clr-surface-a10);
     }
 
