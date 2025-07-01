@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I am a graduate student with a background in machine learning, deeply passionate about exploring diverse fields of knowledge. While my heart lies in AI technology and its applications, I also actively engage in front-end development projects.
+I am a graduate student with a background in machine learning, and I'm passionate about exploring diverse fields of knowledge. While I primarily focus on front-end development, I also have experience working on the back-end, building full-stack applications that are both powerful and user-friendly.
 
 Driven by curiosity, I consider myself a self-motivated developer, always eager to learn and build meaningful tools that bridge the gap between people and technology.
 
