@@ -8,7 +8,7 @@ I'm currently the maintainer of Cherry Studio, an open-source project focused on
 
 If you're interested in AI, web development, or just want to chat about cool tech stuff — feel free to reach out!
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=eurfelux)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://trophygh.kolioaris.xyz/?username=eurfelux)](https://github.com/ryo-ma/github-profile-trophy)
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eurfelux&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
