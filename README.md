@@ -1,5 +1,8 @@
 ### Hi there 👋
 
+Contact me: 
+- Email: <a href="mailto:eurfelux@gmail.com">eurfelux@gmail.com</a>
+
 I am a graduate student with a background in machine learning, and I'm passionate about exploring diverse fields of knowledge. While I primarily focus on front-end development, I also have experience working on the back-end, building full-stack applications that are both powerful and user-friendly.
 
 Driven by curiosity, I consider myself a self-motivated developer, always eager to learn and build meaningful tools that bridge the gap between people and technology.
